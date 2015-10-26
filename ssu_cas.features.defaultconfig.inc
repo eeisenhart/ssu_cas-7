@@ -25,18 +25,18 @@ function ucberkeley_cas_defaultconfig_default_ldap_servers() {
   $ldap_servers_conf = new stdClass();
   $ldap_servers_conf->disabled = FALSE; /* Edit this to true to make a default ldap_servers_conf disabled initially */
   $ldap_servers_conf->api_version = 1;
-  $ldap_servers_conf->sid = 'ucb_prod';
-  $ldap_servers_conf->name = 'ldap.berkeley.edu';
+  $ldap_servers_conf->sid = 'ssu_prod';
+  $ldap_servers_conf->name = 'ldaps.sonoma.edu';
   $ldap_servers_conf->status = TRUE;
   $ldap_servers_conf->ldap_type = 'default';
-  $ldap_servers_conf->address = 'ldap.berkeley.edu';
+  $ldap_servers_conf->address = 'ldaps.sonoma.edu';
   $ldap_servers_conf->port = 389;
-  $ldap_servers_conf->tls = FALSE;
+  $ldap_servers_conf->tls = TRUE;
   $ldap_servers_conf->bind_method = TRUE;
   $ldap_servers_conf->binddn = '';
   $ldap_servers_conf->bindpw = '';
   $ldap_servers_conf->basedn = array(
-    0 => 'ou=people,dc=berkeley,dc=edu',
+    0 => 'ou=people,o=sonoma,o=edu',
   );
   $ldap_servers_conf->user_attr = 'uid';
   $ldap_servers_conf->account_name_attr = '';
@@ -245,14 +245,14 @@ function ssu_cas_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cas_server';
-  $strongarm->value = 'auth-test.berkeley.edu';
+  $strongarm->value = 'login.sonoma.edu';
   $export['cas_server'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cas_uri';
-  $strongarm->value = '/cas';
+  $strongarm->value = '/cas-server';
   $export['cas_uri'] = $strongarm;
 
   $strongarm = new stdClass();
