@@ -59,7 +59,7 @@ function ucberkeley_cas_defaultconfig_default_ldap_servers() {
 /**
  * Implements hook_defaultconfig_strongarm().
  */
-function ucberkeley_cas_defaultconfig_strongarm() {
+function ssu_cas_defaultconfig_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

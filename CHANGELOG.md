@@ -1,3 +1,7 @@
+ssu_cas 7.x-2.3
+===============
+* Rename to ssu_cas
+
 ucberkeley_cas 7.x-2.2
 ======================
 * OPENUCB-768: Move cas_attributes from defaultconfig to strongarm.  Add update

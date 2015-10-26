@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ucberkeley_cas.strongarm.inc
+ * ssu_cas.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function ucberkeley_cas_strongarm() {
+function ssu_cas_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

@@ -21,8 +21,8 @@ projects[ldap][version] = 1.0-beta12
 
 ; UC Berkeley CAS Feature
 ; TODO: update dl options
-; specify type=module to prevent "No release history was found for the requested project (ucberkeley_cas)."
-projects[ucberkeley_cas][type] = "module"
-projects[ucberkeley_cas][download][type] = "git"
-projects[ucberkeley_cas][download][url] = "git@github.com:bwood/ucberkeley_cas-7.git"
-projects[ucberkeley_cas][download][branch] = "develop"
+; specify type=module to prevent "No release history was found for the requested project (ssu_cas)."
+projects[ssu_cas][type] = "module"
+projects[ssu_cas][download][type] = "git"
+projects[ssu_cas][download][url] = "git@github.com:ssudrupal/ssu_cas-7.git"
+projects[ssu_cas][download][branch] = "develop"
